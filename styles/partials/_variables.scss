@@ -1,0 +1,19 @@
+@use 'fonts' as *;
+
+// website fonts
+$regular-text: avenir-next-regular;
+$demi-text: avenir-next-demi;
+$bold-text: avenir-next-bold;
+
+// website colors
+$bandsite-black:#323232;
+$bandsite-darkblack:#000000;
+$silver:#AFAFAF;
+$white:#FFFFFF;
+$mercury:#E1E1E1;
+$alabster:#FAFAFA;
+
+//display device breakpoints
+$mobile-breakpoint-max: 767px;
+$tablet-breakpoint-min: 768px;
+$desktop-breakpoint-min: 1280px;
