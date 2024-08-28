@@ -1,1 +1,3 @@
 **/.DS_Store
+#Ignore Scss map files
+*.css.map
