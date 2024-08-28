@@ -57,7 +57,7 @@ body {
   width: 50vw;
 }
 
-.hero__image {
+.hero {
   width: 100vw;
   height: 11.4375rem;
   background-image: url("/assets/Images/hero-bio.jpg");
@@ -65,15 +65,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.hero__image__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero__container {
   width: 100vw;
   height: 11.4375rem;
   background-color: rgba(50, 50, 50, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.hero__image__text {
+.hero__text {
   font-family: avenir-next-bold;
   font-size: 24px;
   line-height: 32px;
@@ -150,7 +150,7 @@ body {
     padding: 0;
     font-size: 1rem;
   }
-  .hero__image {
+  .hero {
     width: 100vw;
     height: 25rem;
     background-image: url("/assets/Images/hero-bio.jpg");
@@ -158,15 +158,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .hero__image__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .hero__container {
     width: 100vw;
     height: 25rem;
     background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .hero__image__text {
+  .hero__text {
     font-family: avenir-next-bold;
     font-size: 60px;
     line-height: 68px;
@@ -223,6 +223,30 @@ body {
     width: 5rem;
     padding: 0;
     font-size: 1rem;
+  }
+  .hero {
+    width: 100vw;
+    height: 41.875rem;
+    background-image: url("/assets/Images/hero-bio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 41.875rem;
+    background-color: rgba(50, 50, 50, 0.5);
+  }
+  .hero__text {
+    font-family: avenir-next-bold;
+    font-size: 60px;
+    line-height: 68px;
+    color: #FFFFFF;
+    margin: 0 0 0 11.25rem;
+    width: 31.875rem;
   }
   .photo-gallery {
     flex-direction: row;
