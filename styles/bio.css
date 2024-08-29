@@ -214,6 +214,65 @@ body {
     margin: 0 0 0 1.5rem;
     width: 31.875rem;
   }
+  .music {
+    margin: 0 1.5rem;
+  }
+  .music__title {
+    font-family: avenir-next-bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #323232;
+    margin: 3rem 0 1.5rem 0;
+  }
+  .music__container-image {
+    height: 47.136vw;
+    margin: 0 2rem 1.5rem 2rem;
+  }
+  .music__image {
+    height: 100%;
+    width: 100%;
+  }
+  .music__quote {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #323232;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    width: 84vw;
+  }
+  .music__person {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #323232;
+    margin: 0 0 2rem 2rem;
+  }
+  .music__band {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin: 0 0 1.5rem 2rem;
+  }
+  .music__description-container {
+    display: flex;
+    margin: 0 2rem;
+  }
+  .music__description--one {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323232;
+    margin: 0 1.5rem 2.5rem 0;
+  }
+  .music__description--two {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323232;
+    margin: 0 0 2.5rem 0;
+  }
   .photo-gallery {
     flex-direction: row;
     flex-wrap: wrap;

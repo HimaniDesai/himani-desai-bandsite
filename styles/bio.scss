@@ -188,6 +188,56 @@ body{
             width: 31.875rem;
         }
     }  
+
+    .music {
+        margin: 0 1.5rem;
+
+        &__title {
+            @include section-header-desktop;
+            color: $bandsite-black;
+            margin: 3rem 0 1.5rem 0;
+        }
+        &__container-image {
+            height: 47.136vw;
+            margin: 0 2rem 1.5rem 2rem;
+        }
+        &__image {
+            height: 100%;
+            width: 100%;
+        }
+        &__quote {
+            @include subheader-desktop;
+            color: $bandsite-black;
+            margin: 1.5rem 2rem 1.5rem 2rem;
+            width: 84vw;
+        }
+        &__person {
+            @include body-copy-desktop;
+            font-weight: 600;
+            color: $bandsite-black;
+            margin: 0 0 2rem 2rem;
+        }
+        &__band {
+            @include subheader-desktop;
+            color: $bandsite-darkblack;
+            margin: 0 0 1.5rem 2rem;
+        }
+        &__description-container {
+            display: flex;
+            margin: 0 2rem ;
+        }
+        &__description--one {
+            @include body-copy-desktop;
+            color: $bandsite-black;
+            margin: 0 1.5rem 2.5rem 0;
+        }
+        &__description--two {
+            @include body-copy-desktop;
+            color: $bandsite-black;
+            margin: 0 0 2.5rem 0;
+        }
+    } 
+
     
    
     .photo-gallery {
@@ -217,7 +267,6 @@ body{
             width: 6.25rem;
             margin: 0 1.75rem 0 11.25rem;
             padding: 0;
-            // padding: 0 1.5rem 0 1.5rem;
         }
         &__border-one, &__border-two {
             border-bottom: none;
