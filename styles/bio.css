@@ -82,8 +82,59 @@ body {
   width: 16.875rem;
 }
 
-.band-image {
+.music {
+  margin: 0 1rem;
+}
+.music__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #323232;
+  margin: 1.5rem 0 1rem 0;
+}
+.music__container-image {
+  height: 45.3125vw;
+  margin: 0 0 1rem 0;
+}
+.music__image {
+  height: 100%;
   width: 100%;
+}
+.music__quote {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323232;
+  margin: 0 0 1rem 0;
+}
+.music__person {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #323232;
+  margin: 0 0 1.5rem 0;
+}
+.music__band {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0 0 1rem 0;
+}
+.music__description--one {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+  margin: 0 0 1rem 0;
+}
+.music__description--two {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+  margin: 0 0 1rem 0;
 }
 
 .photo-gallery {
@@ -99,17 +150,6 @@ body {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 767px) {
-  .photo-gallery {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-  }
-  .photo-gallery__item {
-    width: 90%;
-    margin: 3vw 0;
-  }
-}
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;

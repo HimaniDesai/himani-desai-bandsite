@@ -63,9 +63,51 @@ body{
         width: 16.875rem;
     }
 }
+.music {
+    margin: 0 1rem;
 
-.band-image {
-    width: 100%;
+    &__title {
+        @include section-header-mobile;
+        color: $bandsite-black;
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    &__container-image {
+        height: 45.3125vw;
+        margin: 0 0 1rem 0;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__quote {
+        @include subheader-mobile;
+        color: $bandsite-black;
+        margin: 0 0 1rem 0;
+    }
+    &__person {
+        @include body-copy-mobile;
+        font-weight: 600;
+        color: $bandsite-black;
+        margin: 0 0 1.5rem 0;
+    }
+    &__band {
+        @include subheader-mobile;
+        color: $bandsite-darkblack;
+        margin: 0 0 1rem 0;
+    }
+    &__description--one {
+        @include body-copy-mobile;
+        color: $bandsite-black;
+        margin: 0 0 1rem 0;
+    }
+    &__description--two {
+        @include body-copy-mobile;
+        color: $bandsite-black;
+        margin: 0 0 1rem 0;
+    }
 }
 
 
@@ -83,19 +125,6 @@ body{
     }
   }
 // Responsive Design
-@include mobile {
-    .photo-gallery {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-        &__item {
-              width: 90%;
-              margin: 3vw 0;
-              
-        }
-    }
-}
-
 @include tablet {
     .header {
         height: 80px;
@@ -158,8 +187,9 @@ body{
             margin: 0 0 0 1.5rem;
             width: 31.875rem;
         }
-    }   
-
+    }  
+    
+   
     .photo-gallery {
         flex-direction: row;
         flex-wrap: wrap;
@@ -236,8 +266,9 @@ body{
             margin: 0 0 0 11.25rem;
             width: 31.875rem;
         }
-    }   
-
+    }  
+    
+    
     .photo-gallery {
         flex-direction: row;
         flex-wrap: wrap;
