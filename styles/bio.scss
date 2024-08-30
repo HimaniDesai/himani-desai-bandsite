@@ -110,20 +110,34 @@ body{
     }
 }
 
-
 .photo-gallery {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-  
-    &__item {
-      text-align: center;
-      margin: 20px 0;
-      padding: 20px 0;
-      font-size: 5rem;
-      border-radius: 5px;
+    background-color: $alabaster;
+    &__container {
+        margin: 0 1rem;
     }
-  }
+    &__title {
+        @include section-header-mobile;
+        color: $bandsite-black;
+        margin: 0 0 1.5rem 0;
+        padding-top: 2rem;
+    }
+    &__image-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        // height: 50.625vw;
+        // width: 100%;
+        margin-bottom: 1rem;
+        &--nine {
+            margin-bottom: 2rem;
+        }
+    }
+    &__item:hover {
+        filter: grayscale(0%);
+        box-shadow: 2px 2px 20px;
+    }
+}
 // Responsive Design
 @include tablet {
     .header {
@@ -238,17 +252,31 @@ body{
         }
     } 
 
-    
-   
     .photo-gallery {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
+        background-color: $alabaster;
+
+        &__container {
+            margin: 0 1.5rem;
+        }
+        &__title {
+            @include section-header-desktop;
+            color: $bandsite-black;
+            margin: 0 0 1.5rem 0;
+            padding-top: 2rem;
+        }
+        &__image-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
         &__item {
-              width: 30%;
-              margin: 3vw 0;
-              
+        height: 16.40625vw;
+        width: 29.166666vw;
+        margin: 0 1.5rem 1.5rem 0;
+            &--three, &--six, &--nine{
+            margin-right: 0;
+            }
         }
     }
 }
@@ -365,17 +393,33 @@ body{
         }
     } 
 
-    
-    
     .photo-gallery {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-evenly;
+        background-color: $alabaster;
+        &__container {
+            margin: 0 11.25rem;
+        }
+        &__title {
+            @include section-header-desktop;
+            color: $bandsite-black;
+            margin: 0 0 4rem 0;
+            padding-top: 3rem;
+        }
+        &__image-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
         &__item {
-              width: 30%;
-              margin: 3vw 0;
-              
+        height: 13.40vw;
+        width: 23.888888vw;
+        margin: 0 1.5rem 1.5rem 0;
+            &--three, &--six, &--nine{
+            margin-right: 0;
+        }
+        &--seven, &--eight, &--nine{
+                margin-bottom: 2.5rem;
+            }
         }
     }
 }
