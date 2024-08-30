@@ -402,6 +402,80 @@ body{
             }
         }
     }
+
+    .footer {
+        background-color: $bandsite-black;
+        &__container {
+            margin: 0 1.5rem;
+        }
+        &__title {
+            @include section-header-mobile;
+            padding: 3rem 0 2.5rem 0;
+        }
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__image-container {
+            padding: 3rem 0 2.5rem 0;
+        }
+        &__logo {
+            padding: 3rem 0 2.5rem 0;
+            visibility: visible;
+            margin-left: 136px;
+        }
+        &__names {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__thebeesknees {
+            &--title{
+                @include subheader-desktop;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__limitlessartistgroup {
+            &--title{
+                @include subheader-desktop;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__archentertainment {
+            &--title{
+                @include subheader-desktop;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__copyright {
+            @include footer-copy-desktop;
+            padding: 0 0 2.5rem 0;
+        }
+    }
 }
 @include desktop {
     .header {
@@ -543,6 +617,91 @@ body{
         &--seven, &--eight, &--nine{
                 margin-bottom: 2.5rem;
             }
+        }
+    }
+
+    .footer {
+        background-color: $bandsite-black;
+        &__container {
+            margin: 0 11.25rem;
+        }
+        &__title {
+            @include section-header-desktop;
+            padding: 3rem 0 3.5rem 0;
+        }
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__image-container {
+            padding: 3rem 0 3.5rem 0;
+            justify-content: space-evenly;
+        }
+        &__facebook {
+            padding: 0 2rem;
+        }
+        &__logo {
+            padding: 3rem 0 3.5rem 0;
+            visibility: visible;
+            margin-left: 136px;
+        }
+        &__names {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__thebeesknees {
+            &--title{
+                @include subheader-desktop;
+                padding-bottom: 1.5rem;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+                padding-bottom: 1.5rem;
+
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__limitlessartistgroup {
+            &--title{
+                @include subheader-desktop;
+                padding-bottom: 1.5rem;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+                padding-bottom: 1.5rem;
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__archentertainment {
+            &--title{
+                @include subheader-desktop;
+                padding-bottom: 1.5rem;
+            }
+            &--address {
+                @include footer-copy-desktop;
+                width: 225px;
+                padding-bottom: 1.5rem;
+            }
+            &--email {
+                @include footer-copy-desktop;
+                padding: 0 0 2.5rem 0;
+            }
+        }
+
+        &__copyright {
+            @include footer-copy-desktop;
+            padding: 0 0 2.5rem 0;
         }
     }
 }
