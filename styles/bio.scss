@@ -134,10 +134,133 @@ body{
         }
     }
     &__item:hover {
-        filter: grayscale(0%);
         box-shadow: 2px 2px 20px;
     }
 }
+
+.footer {
+    background-color: $bandsite-black;
+    &__container {
+        margin: 0 1rem;
+    }
+    &__logo{
+        padding: 0 0 1.5rem 0;;
+    }
+    &__title {
+        @include section-header-mobile;
+        color: $white;
+        margin: 0;
+        padding: 3rem 0 1.5rem 0;
+    }
+    &__image-container {
+        display: flex;
+        justify-content: space-between;
+        width: 135px;
+        padding: 0 0 1.5rem 0;
+    }
+    &__thebeesknees {
+        display: flex;
+        flex-direction: column;
+        &--title {
+            @include subheader-mobile;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+        }
+        &--address {
+            @include footer-copy-desktop;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+            width: 54.208604vw;
+        }
+        &--email {
+            margin: 0;
+            &-link {
+                text-decoration: none;
+                @include footer-copy-desktop;
+                color: $white;
+                margin: 0;
+                padding: 0 0 1.5rem 0;
+            }
+            &-link:hover {
+                color: $silver;
+            }   
+        }
+    }
+
+    &__limitlessartistgroup {
+        display: flex;
+        flex-direction: column;
+        &--title {
+            @include subheader-mobile;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+        }
+        &--address {
+            @include footer-copy-desktop;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+            width: 54.208604vw;
+        }
+        &--email {
+            margin: 0;
+            &-link {
+                text-decoration: none;
+                @include footer-copy-desktop;
+                color: $white;
+                margin: 0;
+                padding: 0 0 1.5rem 0;
+            }
+            &-link:hover {
+                color: $silver;
+            }   
+        }
+    }
+
+
+    &__archentertainment {
+        display: flex;
+        flex-direction: column;
+        &--title {
+            @include subheader-mobile;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+        }
+        &--address {
+            @include footer-copy-desktop;
+            color: $white;
+            margin: 0;
+            padding: 0 0 1rem 0;
+            width: 54.208604vw;
+        }
+        &--email {
+            margin: 0;
+            &-link {
+                text-decoration: none;
+                @include footer-copy-desktop;
+                color: $white;
+                margin: 0;
+                padding: 0 0 1.5rem 0;
+            }
+            &-link:hover {
+                color: $silver;
+            }   
+        }
+    }   
+
+    &__copyright {
+        @include footer-copy-desktop;
+        color: $white;
+        margin: 0;
+        width: 66.68vw;
+        padding: 0 0 1.5rem 0;
+    }
+}
+
 // Responsive Design
 @include tablet {
     .header {

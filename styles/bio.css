@@ -162,8 +162,148 @@ body {
   margin-bottom: 2rem;
 }
 .photo-gallery__item:hover {
-  filter: grayscale(0%);
   box-shadow: 2px 2px 20px;
+}
+
+.footer {
+  background-color: #323232;
+}
+.footer__container {
+  margin: 0 1rem;
+}
+.footer__logo {
+  padding: 0 0 1.5rem 0;
+}
+.footer__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 3rem 0 1.5rem 0;
+}
+.footer__image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+  padding: 0 0 1.5rem 0;
+}
+.footer__thebeesknees {
+  display: flex;
+  flex-direction: column;
+}
+.footer__thebeesknees--title {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+.footer__thebeesknees--address {
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  width: 54.208604vw;
+}
+.footer__thebeesknees--email {
+  margin: 0;
+}
+.footer__thebeesknees--email-link {
+  text-decoration: none;
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+.footer__thebeesknees--email-link:hover {
+  color: #AFAFAF;
+}
+.footer__limitlessartistgroup {
+  display: flex;
+  flex-direction: column;
+}
+.footer__limitlessartistgroup--title {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+.footer__limitlessartistgroup--address {
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  width: 54.208604vw;
+}
+.footer__limitlessartistgroup--email {
+  margin: 0;
+}
+.footer__limitlessartistgroup--email-link {
+  text-decoration: none;
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+.footer__limitlessartistgroup--email-link:hover {
+  color: #AFAFAF;
+}
+.footer__archentertainment {
+  display: flex;
+  flex-direction: column;
+}
+.footer__archentertainment--title {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+.footer__archentertainment--address {
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  width: 54.208604vw;
+}
+.footer__archentertainment--email {
+  margin: 0;
+}
+.footer__archentertainment--email-link {
+  text-decoration: none;
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+.footer__archentertainment--email-link:hover {
+  color: #AFAFAF;
+}
+.footer__copyright {
+  font-family: avenir-next-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  width: 66.68vw;
+  padding: 0 0 1.5rem 0;
 }
 
 @media screen and (min-width: 768px) {
