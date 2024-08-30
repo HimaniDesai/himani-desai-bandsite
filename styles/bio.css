@@ -1,17 +1,17 @@
 @font-face {
   font-family: avenir-next-bold;
   font-weight: 700;
-  src: url("/assets/Font/AvenirNextLTPro-Bold.otf");
+  src: url("/assets/fonts/AvenirNextLTPro-Bold.otf");
 }
 @font-face {
   font-family: avenir-next-regular;
   font-weight: 400;
-  src: url("/assets/Font/AvenirNextLTPro-Regular.otf");
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf");
 }
 @font-face {
   font-family: avenir-next-demi;
   font-weight: 600;
-  src: url("/assets/Font/AvenirNextLTPro-Demi.otf");
+  src: url("/assets/fonts/AvenirNextLTPro-Demi.otf");
 }
 body {
   margin: 0;
@@ -60,7 +60,7 @@ body {
 .hero {
   width: 100vw;
   height: 11.4375rem;
-  background-image: url("/assets/Images/hero-bio.jpg");
+  background-image: url("/assets/images/hero-bio.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,6 +156,8 @@ body {
   flex-direction: column;
 }
 .photo-gallery__item {
+  height: 50.625vw;
+  width: 100%;
   margin-bottom: 1rem;
 }
 .photo-gallery__item--nine {
@@ -349,7 +351,7 @@ body {
   .hero {
     width: 100vw;
     height: 25rem;
-    background-image: url("/assets/Images/hero-bio.jpg");
+    background-image: url("/assets/images/hero-bio.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -585,7 +587,7 @@ body {
   .hero {
     width: 100vw;
     height: 41.875rem;
-    background-image: url("/assets/Images/hero-bio.jpg");
+    background-image: url("/assets/images/hero-bio.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
