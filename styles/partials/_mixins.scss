@@ -1,0 +1,84 @@
+@use 'variables' as *;
+
+//device responsive 
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint-max) {
+        @content;
+      }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint-min)  {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint-min) {
+    @content;
+  }
+}
+
+//Font mixins
+@mixin page-header-desktop{
+    font-family: $bold-text;
+    font-size: 60px;
+    line-height: 68px;
+}
+@mixin section-header-desktop{
+    font-family: $bold-text;
+    font-size: 36px;
+    line-height: 44px;
+}
+@mixin subheader-desktop{
+    font-family: $demi-text;
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin body-copy-desktop{
+    font-family: $regular-text;
+    font-size: 14px;
+    line-height: 22px;
+}
+@mixin footer-copy-desktop{
+    font-family: $regular-text;
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin labels-buttons-desktop{
+    font-family: $bold-text;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@mixin page-header-mobile{
+    font-family: $bold-text;
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin section-header-mobile{
+    font-family: $bold-text;
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin subheader-mobile{
+    font-family: $demi-text;
+    font-size: 14px;
+    line-height: 22px;
+}
+@mixin body-copy-mobile{
+    font-family: $regular-text;
+    font-size: 13px;
+    line-height: 18px;
+}
+@mixin footer-copy-mobile{
+    font-family: $regular-text;
+    font-size: 13px;
+    line-height: 18px;
+}
+@mixin labels-buttons-mobile{
+    font-family: $bold-text;
+    font-size: 10px;
+    line-height: 20px;
+}
+
