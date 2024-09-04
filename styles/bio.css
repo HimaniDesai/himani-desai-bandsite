@@ -981,6 +981,81 @@ body {
   .photo-gallery__item--seven, .photo-gallery__item--eight, .photo-gallery__item--nine {
     margin-bottom: 2.5rem;
   }
+  .comment {
+    background-color: #FFFFFF;
+    margin: 0 11.25rem 0 11.25rem;
+  }
+  .comment__title {
+    font-family: avenir-next-bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 3rem 0 3.5rem;
+  }
+  .comment__image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin: 1.4rem 1.25rem 0 0;
+  }
+  .comment__name-container {
+    display: flex;
+    justify-content: center;
+  }
+  .comment__input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .comment__input-container--text {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0 0 0.5rem 0;
+  }
+  .comment__text-container {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid #323232;
+    border-radius: 0.25rem;
+    width: 28.75rem;
+    background-color: #FAFAFA;
+    border-color: #AFAFAF;
+    resize: none;
+  }
+  .comment__text-container:focus {
+    border: 1px solid #323232;
+    outline-width: 0;
+  }
+  .comment__text-container--one {
+    margin: 0 0 1.5rem 0;
+    height: 3rem;
+    padding: 0.625rem 1rem 0 1rem;
+  }
+  .comment__text-container--two {
+    padding: 0.625rem 1rem 0 1rem;
+    height: 6rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .comment__button {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #323232;
+    border-style: none;
+    height: 3rem;
+    border-radius: 0.25rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 10rem;
+    margin: 0 0 1.5rem 0;
+    outline-width: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+  .comment__button:hover {
+    background-color: #000000;
+  }
   .footer {
     background-color: #323232;
   }

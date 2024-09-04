@@ -901,6 +901,80 @@ body{
         }
     }
 
+    .comment {
+        background-color: $white;
+        margin: 0 11.25rem 0 11.25rem;
+    
+        &__title {
+          @include section-header-desktop;
+          margin: 3rem 0 3.5rem;
+        }
+    
+        &__image {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 2rem;
+          margin: 1.4rem 1.25rem 0 0;
+        }
+    
+        &__name-container {
+          display: flex;
+          justify-content: center;
+        }
+    
+        &__input-container {
+          display: flex;
+          flex-direction: column;
+          &--text {
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0 0 0.5rem 0;
+          }
+        }
+    
+        &__text-container {
+          @include body-copy-desktop;
+          border: 1px solid $bandsite-black;
+          border-radius: 0.25rem;
+          width: 28.75rem;
+          background-color: $alabaster;
+          border-color: $silver;
+          resize: none;
+          &:focus {
+            border: 1px solid $bandsite-black;
+            outline-width: 0;
+          }
+          &--one {
+            margin: 0 0 1.5rem 0;
+            height: 3rem;
+            padding: 0.625rem 1rem 0 1rem;
+          }
+          &--two {
+            padding: 0.625rem 1rem 0 1rem;
+            height: 6rem;
+            margin: 0 0 1.5rem 0;
+          }
+        }
+    
+        &__button {
+          @include subheader-desktop;
+          background-color: $bandsite-black;
+          border-style: none;
+          height: 3rem;
+          border-radius: 0.25rem;
+          color: $white;
+          text-align: center;
+          width: 10rem;
+          margin: 0 0 1.5rem 0;
+          outline-width: 0;
+          padding: 0;
+          align-self: flex-end;
+          &:hover {
+            background-color: $bandsite-darkblack;
+          }
+        }
+      }
+
     .footer {
         background-color: $bandsite-black;
         &__container {
