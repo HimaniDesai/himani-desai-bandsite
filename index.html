@@ -55,7 +55,7 @@
         </div>
         
     </main>
-    <div class="photo-gallery">
+    <main class="photo-gallery">
         <div class="photo-gallery__container">
             <div class="photo-gallery__title">Photo Gallery</div>
             <div class="photo-gallery__image-container">
@@ -70,7 +70,35 @@
                 <img class="photo-gallery__item photo-gallery__item--nine" src="/assets/images/Photo-gallery-9.jpg" alt="photo-gallery1">
             </div>
         </div>
-    </div>
+    </main>
+
+    <main class="comment">
+
+        <h1 class="comment__title">Join the Conversation</h1>
+
+        <div class="comment__name-container">  
+
+                <img class="comment__image" src="/assets/images/Mohan-muruge.jpg" alt="mohan-muruge-image">
+
+                <form class="comment__input-container">
+                    
+                    <h5 class="comment__input-container--text">NAME</h5>
+                    
+                    <textarea class="comment__text-container comment__text-container--one"  name="name" rows="10" cols="50"
+                    placeholder="Enter your name"></textarea>
+                    
+                    <h5 class="comment__input-container--text">COMMENT</h5>
+                    
+                    <textarea class="comment__text-container comment__text-container--two" name="comment" rows="10" cols="50"
+                    placeholder="Add a new comment"></textarea>
+                    
+                    <button class="comment__button">COMMENT</button>
+                    
+                </form>
+            </div>  
+            <div class="comment__default-comment"></div>
+            <script src="/scripts/index-page.js"></script>
+    </main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__header">

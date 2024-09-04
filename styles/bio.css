@@ -185,6 +185,130 @@ body {
   box-shadow: 2px 2px 20px;
 }
 
+.comment {
+  background-color: #FFFFFF;
+  margin: 0 1rem 1rem 1rem;
+}
+.comment__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #323232;
+  margin: 2rem 0 2rem;
+}
+.comment__image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  margin-top: 1.4rem;
+}
+.comment__name-container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #E1E1E1;
+}
+.comment__input-container {
+  display: flex;
+  flex-direction: column;
+}
+.comment__input-container--text {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AFAFAF;
+  margin: 0 0 0.5rem 0;
+}
+.comment__text-container {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #323232;
+  border-radius: 0.25rem;
+  width: 14rem;
+  background-color: #FAFAFA;
+  border-color: #AFAFAF;
+  resize: none;
+}
+.comment__text-container:focus {
+  border: 2px solid #323232;
+  outline-width: 0;
+}
+.comment__text-container--one {
+  margin: 0 0 0.5rem 0;
+  height: 2.5rem;
+  padding: 0.625rem;
+}
+.comment__text-container--two {
+  padding: 0.625rem 0.625rem 3.125rem 0.625rem;
+  margin: 0 0 0.5rem 0;
+  height: 5rem;
+}
+.comment__button {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #323232;
+  border-style: none;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  text-align: center;
+  width: 14rem;
+  margin: 0 0 2rem 0;
+  outline-width: 0;
+  padding: 0;
+}
+.comment__button:hover {
+  background-color: #000000;
+}
+.comment__default {
+  border-bottom: 1px solid #E1E1E1;
+}
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+}
+.comment__header--image-one {
+  height: 3rem;
+  width: 3rem;
+  background-color: #E1E1E1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+}
+.comment__header--name {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323232;
+  padding: 1.75rem 0 0 1rem;
+  margin: 0;
+}
+.comment__header--date {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  color: #AFAFAF;
+  margin: 0;
+  padding: 1.75rem 0 0 0;
+}
+.comment__text-container-default {
+  display: flex;
+}
+.comment__text-container-default--comment {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  word-wrap: break-word;
+  width: 96%;
+  color: #323232;
+  margin: 0;
+  padding: 1rem 0 1.5rem 1rem;
+}
+
 .footer {
   background-color: #323232;
 }
@@ -476,6 +600,147 @@ body {
   }
   .photo-gallery__item--three, .photo-gallery__item--six, .photo-gallery__item--nine {
     margin-right: 0;
+  }
+  .comment {
+    background-color: #FFFFFF;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  .comment__title {
+    font-family: avenir-next-bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 3rem 0 3.5rem;
+  }
+  .comment__image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin: 1.4rem 1.25rem 0 0;
+  }
+  .comment__name-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  .comment__border-container {
+    display: flex;
+    justify-content: center;
+  }
+  .comment__border {
+    width: 33rem;
+    border: 1px solid #E1E1E1;
+  }
+  .comment__input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .comment__input-container--text {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0 0 0.5rem 0;
+  }
+  .comment__text-container {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid #323232;
+    border-radius: 0.25rem;
+    width: 28.75rem;
+    background-color: #FAFAFA;
+    border-color: #AFAFAF;
+    resize: none;
+  }
+  .comment__text-container:focus {
+    border: 1px solid #323232;
+    outline-width: 0;
+  }
+  .comment__text-container--one {
+    margin: 0 0 1.5rem 0;
+    height: 3rem;
+    padding: 0.625rem 1rem 0 1rem;
+  }
+  .comment__text-container--two {
+    padding: 0.625rem 1rem 0 1rem;
+    height: 6rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .comment__button {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #323232;
+    border-style: none;
+    height: 3rem;
+    border-radius: 0.25rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 10rem;
+    margin: 0 0 1.5rem 0;
+    outline-width: 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+  .comment__button:hover {
+    background-color: #000000;
+  }
+  .comment__default-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .comment__default {
+    width: 528px;
+  }
+  .comment__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .comment__header--first {
+    border-top: 1px solid #E1E1E1;
+  }
+  .comment__header--image-one {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+  }
+  .comment__header--name {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #323232;
+    padding: 1.75rem 1rem 0 3.9375rem;
+    margin: 0;
+  }
+  .comment__header--date {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: #AFAFAF;
+    margin: 0;
+    padding: 1.75rem 0 0 0;
+  }
+  .comment__text-container-default {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .comment__text-container-default--comment {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323232;
+    width: 29rem;
+    margin: 0;
+    padding: 1rem 0 1.5rem 0;
   }
   .footer {
     background-color: #323232;

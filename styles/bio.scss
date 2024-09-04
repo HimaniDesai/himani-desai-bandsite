@@ -159,6 +159,124 @@ body{
     }
 }
 
+.comment {
+    background-color: $white;
+    margin: 0 1rem 1rem 1rem;
+  
+    &__title {
+      @include section-header-mobile;
+      color: $bandsite-black;
+      margin: 2rem 0 2rem;
+    }
+  
+    &__image {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 2rem;
+      margin-top: 1.4rem;
+    }
+  
+    &__name-container {
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid $mercury;
+    }
+  
+    &__input-container {
+      display: flex;
+      flex-direction: column;
+      &--text {
+        @include subheader-mobile;
+        color: $silver;
+        margin: 0 0 0.5rem 0;
+      }
+    }
+  
+    &__text-container {
+      @include body-copy-mobile;
+      border: 1px solid $bandsite-black;
+      border-radius: 0.25rem;
+      width: 14rem;
+      background-color: $alabaster;
+      border-color: $silver;
+      resize: none;
+      &:focus {
+        border: 2px solid $bandsite-black;
+        outline-width: 0;
+      }
+      &--one {
+        margin: 0 0 0.5rem 0;
+        height: 2.5rem;
+        padding: 0.625rem;
+      }
+      &--two {
+        padding: 0.625rem 0.625rem 3.125rem 0.625rem;
+        margin: 0 0 0.5rem 0;
+        height: 5rem;
+      }
+    }
+  
+    &__button {
+      @include subheader-mobile;
+      background-color: $bandsite-black;
+      border-style: none;
+      height: 2.5rem;
+      border-radius: 0.25rem;
+      color: $white;
+      text-align: center;
+      width: 14rem;
+      margin: 0 0 2rem 0;
+      outline-width: 0;
+      padding: 0;
+      &:hover {
+        background-color: $bandsite-darkblack;
+      }
+    }
+  
+    &__default {
+      border-bottom: 1px solid $mercury;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      &--image-one {
+        height: 3rem;
+        width: 3rem;
+        background-color: $mercury;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+        border-radius: 2rem;
+        margin-top: 1.5rem;
+      }
+      &--name {
+        @include subheader-mobile;
+        color: $bandsite-black;
+        padding: 1.75rem 0 0 1rem;
+        margin: 0;
+      }
+      &--date {
+        @include body-copy-mobile;
+        color: $silver;
+        margin: 0;
+        padding: 1.75rem 0 0 0;
+      }
+    }
+  
+    &__text-container-default {
+      display: flex;
+      &--comment {
+        @include body-copy-mobile;
+        word-wrap: break-word;
+        width: 96%;
+        color: $bandsite-black;
+        margin: 0;
+        padding: 1rem 0 1.5rem 1rem;
+      }
+    }
+  }
+
 .footer {
     background-color: $bandsite-black;
     &__container {
@@ -423,6 +541,147 @@ body{
                 }
         }
     }
+
+    .comment {
+        background-color: $white;
+        margin: 0 1.5rem 0 1.5rem;
+    
+        &__title {
+          @include section-header-desktop;
+          margin: 3rem 0 3.5rem;
+        }
+    
+        &__image {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 2rem;
+          margin: 1.4rem 1.25rem 0 0;
+        }
+    
+        &__name-container {
+          display: flex;
+          justify-content: center;
+          border: none;
+        }
+    
+        &__border-container {
+          display: flex;
+          justify-content: center;
+        }
+    
+        &__border {
+          width: 33rem;
+          border: 1px solid $mercury;
+        }
+    
+        &__input-container {
+          display: flex;
+          flex-direction: column;
+          &--text {
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0 0 0.5rem 0;
+          }
+        }
+    
+        &__text-container {
+          @include body-copy-desktop;
+          border: 1px solid $bandsite-black;
+          border-radius: 0.25rem;
+          width: 28.75rem;
+          background-color: $alabaster;
+          border-color: $silver;
+          resize: none;
+          &:focus {
+            border: 1px solid $bandsite-black;
+            outline-width: 0;
+          }
+          &--one {
+            margin: 0 0 1.5rem 0;
+            height: 3rem;
+            padding: 0.625rem 1rem 0 1rem;
+          }
+          &--two {
+            padding: 0.625rem 1rem 0 1rem;
+            height: 6rem;
+            margin: 0 0 1.5rem 0;
+          }
+        }
+    
+        &__button {
+          @include subheader-desktop;
+          background-color: $bandsite-black;
+          border-style: none;
+          height: 3rem;
+          border-radius: 0.25rem;
+          color: $white;
+          text-align: center;
+          width: 10rem;
+          margin: 0 0 1.5rem 0;
+          outline-width: 0;
+          padding: 0;
+          align-self: flex-end;
+          &:hover {
+            background-color: $bandsite-darkblack;
+          }
+        }
+    
+        &__default-comment {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 1.5rem;
+        }
+    
+        &__default {
+          width: 528px;
+        }
+    
+        &__header {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          
+          &--first{
+            border-top: 1px solid $mercury;
+          }
+          &--image-one {
+            position: absolute;
+            height: 3rem;
+            width: 3rem;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 2rem;
+            margin-top: 1.5rem;
+          }
+          &--name {
+            @include subheader-desktop;
+            color: $bandsite-black;
+            padding: 1.75rem 1rem 0 3.9375rem;
+            margin: 0;
+          }
+          &--date {
+            @include body-copy-desktop;
+            color: $silver;
+            margin: 0;
+            padding: 1.75rem 0 0 0;
+          }
+        }
+    
+        &__text-container-default {
+          display: flex;
+          justify-content: flex-end;
+          border-bottom: 1px solid $mercury;
+          &--comment {
+            @include body-copy-desktop;
+            color: $bandsite-black;
+            width: 29rem;
+            margin: 0;
+            padding: 1rem 0 1.5rem 0;
+          }
+        }
+      }
 
     .footer {
         background-color: $bandsite-black;
