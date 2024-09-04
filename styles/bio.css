@@ -52,9 +52,27 @@ body {
 }
 .header__menu-item--one, .header__menu-item--two {
   text-align: center;
+  text-decoration: none;
+  color: #AFAFAF;
   padding-bottom: 3px;
   font-size: 1rem;
   width: 50vw;
+  display: block;
+}
+.header__menu-item--one:hover, .header__menu-item--two:hover {
+  color: #FFFFFF;
+}
+.header #bio {
+  color: #FFFFFF;
+}
+.header #bio-border {
+  border-bottom: 5px solid #FFFFFF;
+}
+.header #shows {
+  color: #FFFFFF;
+}
+.header #shows-border {
+  border-bottom: 5px solid #FFFFFF;
 }
 
 .hero {

@@ -37,10 +37,30 @@ body{
     }
     &__menu-item--one, &__menu-item--two {
         text-align: center;
-        padding-bottom: 3px; 
+        text-decoration: none;
+        color: $silver;
+        padding-bottom: 3px;
         font-size: 1rem;
         width: 50vw;
-  }  
+        display: block;
+        &:hover {
+            color: $white;
+        }
+    }
+    #bio {
+        color: $white;
+      }
+      #bio-border {
+        border-bottom: 5px solid $white;
+      }
+    
+      #shows {
+        color: $white;
+      }
+    
+      #shows-border {
+        border-bottom: 5px solid $white;
+      }  
 }
 .hero {
     width: 100vw;
