@@ -12,4 +12,100 @@
   font-family: avenir-next-demi;
   font-weight: 600;
   src: url("/assets/fonts/AvenirNextLTPro-Demi.otf");
+}
+.hero-shows {
+  width: 100vw;
+  height: 29.5rem;
+  background-image: url("/assets/images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-shows__container {
+  height: 472px;
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0 1rem 0 1rem;
+}
+.hero-shows__subtitle {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 4rem 0 0 0;
+}
+.hero-shows__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  padding: 1rem 0 4rem 0;
+  margin: 0;
+}
+.hero-shows__song {
+  width: 18rem;
+  height: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-shows {
+    width: 100vw;
+    height: 41.875rem;
+  }
+  .hero-shows__container {
+    width: auto;
+    height: 41.875rem;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .hero-shows__subtitle {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 6rem 0 0 0;
+  }
+  .hero-shows__title {
+    width: 37.8125rem;
+    padding: 3rem 0 4rem 0;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero-shows__song {
+    width: 27.25rem;
+    height: 9.125rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-shows {
+    width: 100vw;
+    height: 41.875rem;
+  }
+  .hero-shows__container {
+    width: auto;
+    height: 41.875rem;
+    padding: 0 0 0 11.25rem;
+    display: flex;
+  }
+  .hero-shows__subtitle {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10rem 0 0 0;
+  }
+  .hero-shows__title {
+    width: 39.8125rem;
+    padding: 3rem 4rem 0 0;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero-shows__song-container {
+    height: 429px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-shows__song {
+    width: 27.25rem;
+    height: 9.125rem;
+  }
 }/*# sourceMappingURL=shows.css.map */

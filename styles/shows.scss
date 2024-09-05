@@ -1,3 +1,97 @@
 @use 'partials/variables.scss' as *;
 @use 'partials/mixins.scss' as *;
 
+.hero-shows {
+    width: 100vw;
+    height: 29.5rem;
+    background-image: url("/assets/images/hero-shows.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container {
+        height: 472px;
+        background-color: rgba($bandsite-black, 0.5);
+        padding: 0 1rem 0 1rem;
+    }
+    &__subtitle {
+        @include subheader-mobile;
+        color: $white;
+        margin: 0;
+        padding: 4rem 0 0 0;
+
+    }
+    &__title {
+        @include page-header-mobile;
+        color: $white;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding: 1rem 0 4rem 0;
+        margin: 0;
+    }
+    &__song {
+        width: 18rem;
+        height: 6rem;
+    }
+}
+
+@include tablet {
+    .hero-shows {
+        width: 100vw;
+        height: 41.875rem;
+        &__container {
+            width: auto;
+            height: 41.875rem;
+            padding: 0 1.5rem 0 1.5rem;
+
+        }
+        &__subtitle {
+            @include subheader-desktop;
+            padding: 6rem 0 0 0;
+        }
+        &__title {
+            width: 37.8125rem;
+            padding: 3rem 0 4rem 0;
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        &__song {
+            width: 27.25rem;
+            height: 9.125rem;
+        }
+    }
+}
+
+@include desktop {
+    .hero-shows {
+        width: 100vw;
+        height: 41.875rem;
+        &__container {
+            width: auto;
+            height: 41.875rem;
+            padding: 0 0 0 11.25rem;
+            display: flex;
+        }
+
+        &__subtitle {
+            @include subheader-desktop;
+            padding: 10rem 0 0 0;
+        }
+        &__title {
+            width: 39.8125rem;
+            padding: 3rem 4rem 0 0;
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        &__song-container{
+            height: 429px;
+            display: flex;
+            align-items: flex-end;
+        }
+        &__song {
+            width: 27.25rem;
+            height: 9.125rem;
+        }
+    }
+
+}
