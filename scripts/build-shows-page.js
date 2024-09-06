@@ -33,14 +33,14 @@ var shows = [
   ];
   
   function table(arr) {
-    //container that holds it all ("mother-container")
+    //container that has everything
     let tableContainer = document.querySelector(".shows__container");
   
     let titleContainer = document.createElement("div");
     titleContainer.classList.add("shows__title-container");
     tableContainer.appendChild(titleContainer);
   
-    //Shows Header Title
+    //header Title
     let title = document.createElement("h1");
     title.classList.add("shows__title");
     titleContainer.appendChild(title);
@@ -50,7 +50,7 @@ var shows = [
     showsContainer.classList.add("shows__container-all");
     tableContainer.appendChild(showsContainer);
   
-    //header container for labels (tablet&desktop)
+    //container for labels (tablet&desktop)
     let headerContainer = document.createElement("div");
     headerContainer.classList.add("shows__header-container");
     showsContainer.appendChild(headerContainer);
@@ -77,12 +77,12 @@ var shows = [
     buttonHeader.innerText = "BUY TICKETS";
   
     for (let i = 0; i < shows.length; i++) {
-      //Container for all
+      //Container for all types of displays
       let oneContainer = document.createElement("div");
       oneContainer.classList.add("shows__one-container");
       showsContainer.appendChild(oneContainer);
   
-      //Dates
+      //dates
       let dateLabel = document.createElement("h3");
       dateLabel.classList.add("shows__one-container--date-label");
       oneContainer.appendChild(dateLabel);
@@ -94,7 +94,7 @@ var shows = [
   
       date.innerText = arr[i]["date"];
   
-      //Venues
+      //venues
       let venueLabel = document.createElement("h3");
       venueLabel.classList.add("shows__one-container--venue-label");
       oneContainer.appendChild(venueLabel);
@@ -105,7 +105,7 @@ var shows = [
       oneContainer.appendChild(venue);
   
       venue.innerText = arr[i]["venue"];
-      //Location
+      //location
       let locationLabel = document.createElement("h3");
       locationLabel.classList.add("shows__one-container--location-label");
       oneContainer.appendChild(locationLabel);
@@ -116,7 +116,7 @@ var shows = [
       oneContainer.appendChild(location);
   
       location.innerText = arr[i]["location"];
-      //Button
+      //button
       let buttonContainer = document.createElement("div");
       buttonContainer.classList.add("shows__one-container--button-container");
       oneContainer.appendChild(buttonContainer);
@@ -125,7 +125,7 @@ var shows = [
       button.classList.add("shows__one-container--button");
       buttonContainer.appendChild(button);
   
-      button.innerText = "BUY  TICKETS";
+      button.innerText = "BUY  TICKETS";//add appropriate link whenever required to proceed in ticket booking
     }
   }
   table(shows);
