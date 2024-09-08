@@ -1,0 +1,423 @@
+@font-face {
+  font-family: avenir-next-bold;
+  font-weight: 700;
+  src: url("/assets/fonts/AvenirNextLTPro-Bold.otf");
+}
+@font-face {
+  font-family: avenir-next-regular;
+  font-weight: 400;
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+@font-face {
+  font-family: avenir-next-demi;
+  font-weight: 600;
+  src: url("/assets/fonts/AvenirNextLTPro-Demi.otf");
+}
+.hero-shows {
+  width: 100vw;
+  height: 29.5rem;
+  background-image: url("/assets/images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-shows__container {
+  height: 472px;
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0 1rem 0 1rem;
+}
+.hero-shows__subtitle {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 4rem 0 0 0;
+}
+.hero-shows__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  padding: 1rem 0 4rem 0;
+  margin: 0;
+}
+.hero-shows__song {
+  width: 18rem;
+  height: 6rem;
+}
+
+.shows {
+  margin: 0 1rem;
+}
+.shows__title {
+  font-family: avenir-next-bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #323232;
+  margin: 2rem 0 2.5rem 0;
+}
+.shows__header-container {
+  display: none;
+}
+.shows__container-all {
+  margin-bottom: 1rem;
+}
+.shows__one-container--date-label {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AFAFAF;
+  margin: 1rem 0 1rem 0;
+}
+.shows__one-container--date {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 0 1.5rem 0;
+}
+.shows__one-container--venue-label {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AFAFAF;
+  margin: 0 0 1rem 0;
+}
+.shows__one-container--venue {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0 1.5rem 0;
+}
+.shows__one-container--location-label {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AFAFAF;
+  margin: 0 0 1rem 0;
+}
+.shows__one-container--location {
+  font-family: avenir-next-regular;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0 2rem 0;
+}
+.shows__one-container--button {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  width: 288px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #323232;
+  border-radius: 0.3125rem;
+  border: none;
+}
+.shows__one-container--button:hover {
+  background-color: #000000;
+  box-shadow: 2px 2px 20px;
+}
+.shows__one-container--button-container {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-shows {
+    width: 100vw;
+    height: 41.875rem;
+  }
+  .hero-shows__container {
+    width: auto;
+    height: 41.875rem;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .hero-shows__subtitle {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 6rem 0 0 0;
+  }
+  .hero-shows__title {
+    width: 37.8125rem;
+    padding: 3rem 0 4rem 0;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero-shows__song {
+    width: 27.25rem;
+    height: 9.125rem;
+  }
+  .shows {
+    margin: 0 1.5rem;
+  }
+  .shows__title {
+    font-family: avenir-next-bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #323232;
+    margin: 2rem 0 2rem 0;
+  }
+  .shows__header-container {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-between;
+    color: #AFAFAF;
+  }
+  .shows__header-container--date {
+    margin: 0;
+    align-self: center;
+  }
+  .shows__header-container--venue {
+    margin: 0;
+    align-self: center;
+  }
+  .shows__header-container--location {
+    margin: 0;
+    align-self: center;
+  }
+  .shows__header-container--button-header {
+    visibility: hidden;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #323232;
+    border-radius: 0.3125rem;
+    border: none;
+  }
+  .shows__container-all {
+    margin-bottom: 1rem;
+  }
+  .shows__one-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #AFAFAF;
+  }
+  .shows__one-container--date-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 1rem 0 1rem 0;
+  }
+  .shows__one-container--date {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .shows__one-container--venue-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0;
+  }
+  .shows__one-container--venue {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100px;
+    text-align: left;
+    margin: 0;
+  }
+  .shows__one-container--location-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0;
+  }
+  .shows__one-container--location {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    width: 150px;
+    text-align: left;
+    margin: 0;
+  }
+  .shows__one-container--button-container {
+    padding: 1rem 0;
+    border: none;
+  }
+  .shows__one-container--button {
+    font-family: avenir-next-bold;
+    font-size: 12px;
+    line-height: 20px;
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #323232;
+    border-radius: 0.3125rem;
+    border: none;
+  }
+  .shows__one-container--button:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-shows {
+    width: 100vw;
+    height: 41.875rem;
+  }
+  .hero-shows__container {
+    width: auto;
+    height: 41.875rem;
+    padding: 0 0 0 11.25rem;
+    display: flex;
+  }
+  .hero-shows__subtitle {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10rem 0 0 0;
+  }
+  .hero-shows__title {
+    width: 39.8125rem;
+    padding: 3rem 4rem 0 0;
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .hero-shows__song-container {
+    height: 429px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-shows__song {
+    width: 27.25rem;
+    height: 9.125rem;
+  }
+  .shows {
+    margin: 0 11.25rem;
+  }
+  .shows__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .shows__container-all {
+    width: 804px;
+  }
+  .shows__title {
+    font-family: avenir-next-bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #323232;
+    font-size: 2.25rem;
+    margin: 3rem 0 0 0;
+  }
+  .shows__header-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: flex-end;
+    margin-top: 1rem;
+    color: #AFAFAF;
+  }
+  .shows__header-container--date {
+    margin: 0;
+    align-self: flex-end;
+  }
+  .shows__header-container--venue {
+    margin: 0;
+    align-self: flex-end;
+  }
+  .shows__header-container--location {
+    margin: 0;
+    align-self: flex-end;
+  }
+  .shows__header-container--button-header {
+    visibility: hidden;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #323232;
+    border-radius: 0.3125rem;
+    border: none;
+  }
+  .shows__one-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #AFAFAF;
+  }
+  .shows__one-container--date-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 1rem 0 1rem 0;
+  }
+  .shows__one-container--date {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .shows__one-container--venue-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0;
+  }
+  .shows__one-container--venue {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100px;
+    text-align: left;
+    margin: 0;
+  }
+  .shows__one-container--location-label {
+    display: none;
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    color: #AFAFAF;
+    margin: 0;
+  }
+  .shows__one-container--location {
+    font-family: avenir-next-regular;
+    font-size: 14px;
+    line-height: 22px;
+    width: 150px;
+    text-align: left;
+    margin: 0;
+  }
+  .shows__one-container--button-container {
+    padding: 1.5rem 0 1rem 0;
+    border: none;
+  }
+  .shows__one-container--button {
+    width: 160px;
+    height: 48px;
+    color: #FFFFFF;
+    background-color: #323232;
+    border-radius: 0.3125rem;
+    border: none;
+  }
+  .shows__one-container--button:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 20px;
+  }
+}/*# sourceMappingURL=shows.css.map */

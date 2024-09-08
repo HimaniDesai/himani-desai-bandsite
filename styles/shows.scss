@@ -1,0 +1,368 @@
+@use 'partials/variables.scss' as *;
+@use 'partials/mixins.scss' as *;
+
+.hero-shows {
+    width: 100vw;
+    height: 29.5rem;
+    background-image: url("/assets/images/hero-shows.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container {
+        height: 472px;
+        background-color: rgba($bandsite-black, 0.5);
+        padding: 0 1rem 0 1rem;
+    }
+    &__subtitle {
+        @include subheader-mobile;
+        color: $white;
+        margin: 0;
+        padding: 4rem 0 0 0;
+
+    }
+    &__title {
+        @include page-header-mobile;
+        color: $white;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        padding: 1rem 0 4rem 0;
+        margin: 0;
+    }
+    &__song {
+        width: 18rem;
+        height: 6rem;
+    }
+}
+
+.shows {
+    margin: 0 1rem;
+    &__title {
+      @include section-header-mobile;
+      color: $bandsite-black;
+      margin: 2rem 0 2.5rem 0;
+    }
+    &__header-container {
+      display: none;
+    }
+  
+    &__container-all{
+        margin-bottom: 1rem;
+    }
+    &__one-container {
+      &--date-label {
+        @include subheader-mobile;
+        color: $silver;
+        margin: 1rem 0 1rem 0;
+      }
+      &--date {
+        @include subheader-mobile;
+        margin: 0 0 1.5rem 0;
+      }
+      &--venue-label {
+        @include subheader-mobile;
+        color: $silver;
+        margin: 0 0 1rem 0;
+      }
+      &--venue {
+        @include body-copy-mobile;
+        margin: 0 0 1.5rem 0;
+      }
+      &--location-label {
+        @include subheader-mobile;
+        color: $silver;
+        margin: 0 0 1rem 0;
+      }
+      &--location {
+        @include body-copy-mobile;
+        margin: 0 0 2rem 0;
+      }
+  
+      &--button {
+        @include subheader-mobile;
+        width: 288px;
+        height: 48px;
+        color: $white;
+        background-color: $bandsite-black;
+        border-radius: 0.3125rem;
+        border: none;
+        &:hover {
+          background-color: $bandsite-darkblack;
+          box-shadow: 2px 2px 20px;
+        }
+      }
+  
+      &--button-container {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $silver;
+      }
+    }
+  }
+
+@include tablet {
+    .hero-shows {
+        width: 100vw;
+        height: 41.875rem;
+        &__container {
+            width: auto;
+            height: 41.875rem;
+            padding: 0 1.5rem 0 1.5rem;
+
+        }
+        &__subtitle {
+            @include subheader-desktop;
+            padding: 6rem 0 0 0;
+        }
+        &__title {
+            width: 37.8125rem;
+            padding: 3rem 0 4rem 0;
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        &__song {
+            width: 27.25rem;
+            height: 9.125rem;
+        }
+    }
+
+    .shows {
+        margin: 0 1.5rem;
+        &__title {
+          @include section-header-desktop;
+          color: $bandsite-black;
+          margin: 2rem 0 2rem 0;
+        }
+        &__header-container {
+          @include subheader-desktop;
+          display: flex;
+          justify-content: space-between;
+          color: $silver;
+          &--date {
+            margin: 0;
+            align-self: center;
+          }
+          &--venue {
+            margin: 0;
+            align-self: center;
+          }
+          &--location {
+            margin: 0;
+            align-self: center;
+          }
+          &--button-header {
+            visibility: hidden;
+            @include subheader-desktop;
+            width: 160px;
+            height: 48px;
+            color: $white;
+            background-color: $bandsite-black;
+            border-radius: 0.3125rem;
+            border: none;
+          }
+        }
+    
+        &__container-all{
+            margin-bottom: 1rem;
+        }
+        &__one-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid $silver;
+          &--date-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 1rem 0 1rem 0;
+          }
+          &--date {
+            @include subheader-desktop;
+            margin: 0;
+          }
+          &--venue-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0;
+          }
+          &--venue {
+            @include body-copy-desktop;
+            width: 100px;
+            text-align: left;
+            margin: 0;
+          }
+          &--location-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0;
+          }
+          &--location {
+            @include body-copy-desktop;
+            width: 150px;
+            text-align: left;
+            margin: 0;
+          }
+    
+          &--button-container {
+            padding: 1rem 0;
+            border: none;
+          }
+    
+          &--button {
+            @include labels-buttons-desktop;
+            width: 160px;
+            height: 48px;
+            color: $white;
+            background-color: $bandsite-black;
+            border-radius: 0.3125rem;
+            border: none;
+            &:hover {
+                background-color: $bandsite-darkblack;
+                box-shadow: 2px 2px 20px;
+              }
+          }
+        }
+      }
+}
+
+@include desktop {
+    .hero-shows {
+        width: 100vw;
+        height: 41.875rem;
+        &__container {
+            width: auto;
+            height: 41.875rem;
+            padding: 0 0 0 11.25rem;
+            display: flex;
+        }
+
+        &__subtitle {
+            @include subheader-desktop;
+            padding: 10rem 0 0 0;
+        }
+        &__title {
+            width: 39.8125rem;
+            padding: 3rem 4rem 0 0;
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        &__song-container{
+            height: 429px;
+            display: flex;
+            align-items: flex-end;
+        }
+        &__song {
+            width: 27.25rem;
+            height: 9.125rem;
+        }
+    }
+
+    .shows {
+        margin: 0 11.25rem;
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+        }
+        &__container-all {
+          width: 804px;
+        }
+        &__title {
+          @include section-header-desktop;
+          color: $bandsite-black;
+          font-size: 2.25rem;
+          margin: 3rem 0 0 0;
+        }
+        &__header-container {
+          display: flex;
+          justify-content: space-between;
+          @include subheader-desktop;
+          align-items: flex-end;
+          margin-top: 1rem;
+          color: $silver;
+          &--date {
+            margin: 0;
+            align-self: flex-end;
+          }
+          &--venue {
+            margin: 0;
+            align-self: flex-end;
+          }
+          &--location {
+            margin: 0;
+            align-self: flex-end;
+          }
+          &--button-header {
+            visibility: hidden;
+            @include subheader-desktop;
+            width: 160px;
+            height: 48px;
+            color: $white;
+            background-color: $bandsite-black;
+            border-radius: 0.3125rem;
+            border: none;
+          }
+        }
+    
+        &__one-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid $silver;
+          &--date-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 1rem 0 1rem 0;
+          }
+          &--date {
+            @include subheader-desktop;
+            margin: 0;
+          }
+          &--venue-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0;
+          }
+          &--venue {
+            @include body-copy-desktop;
+            width: 100px;
+            text-align: left;
+            margin: 0;
+          }
+          &--location-label {
+            display: none;
+            @include subheader-desktop;
+            color: $silver;
+            margin: 0;
+          }
+          &--location {
+            @include body-copy-desktop;
+            width: 150px;
+            text-align: left;
+            margin: 0;
+          }
+    
+          &--button-container {
+            padding: 1.5rem 0 1rem 0;
+            border: none;
+          }
+    
+          &--button {
+            width: 160px;
+            height: 48px;
+            color: $white;
+            background-color: $bandsite-black;
+            border-radius: 0.3125rem;
+            border: none;
+            &:hover {
+              background-color: $bandsite-darkblack;
+              box-shadow: 2px 2px 20px;
+            }
+          }
+        }
+      }
+
+}
