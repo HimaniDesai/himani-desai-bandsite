@@ -1,6 +1,7 @@
+import axios from 'axios';
 class BandSiteApi {
     constructor(apiKey) {
-        this.apiKey = "821b0af8-cb8c-4c6a-9c47-0d7da5d506ed";
+        this.apiKey = apiKey;
         this.baseUrl = "https://unit-2-project-api-25c1595833b2.herokuapp.com";
     }
     async postComment(comment) {
@@ -47,10 +48,9 @@ class BandSiteApi {
     }
 
     async getShows() {
+        
         try {
-            const response = await fetch(`${this.baseUrl}/showdates?api_key=${this.apiKey}`, {
-                method: 'GET'
-            });
+            const response = await axios.get(`${this.baseUrl}/showdates?api_key=${this.apiKey}`);
 
             if (!response.ok) {
                 throw new Error('Failed to fetch shows');
@@ -64,7 +64,7 @@ class BandSiteApi {
     }
 }
 
-const bandApi = new BandSiteApi('your-api-key-here');
+const bandApi = new BandSiteApi("821b0af8-cb8c-4c6a-9c47-0d7da5d506ed");
 
 (async () => {
     // Post a comment
