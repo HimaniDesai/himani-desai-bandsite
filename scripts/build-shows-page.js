@@ -94,7 +94,7 @@ function table(arr) {
     const weekday = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
     const month = ["Jan","Feb", "Mar","Apr", "May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"]
     let v = new Date(arr[i]["date"])
-    date.innerText = weekday[v.getUTCDay()]+" " + v.getDate() + " " + month[v.getUTCMonth()-1]+ " " + v.getFullYear();
+    date.innerText = weekday[v.getUTCDay()]+" " + v.getDate() + " " + month[v.getUTCMonth()]+ " " + v.getFullYear();
 
     //venues
     let venueLabel = document.createElement("h3");
@@ -131,13 +131,24 @@ function table(arr) {
   }
 }
 // table(shows);
-let showsData = axios.get(
-  "https://unit-2-project-api-25c1595833b2.herokuapp.com/showdates?api_key=821b0af8-cb8c-4c6a-9c47-0d7da5d506ed"
-);
-showsData.then(response => {
-  table(response.data);
-  console.log(response.data);
-});
-showsData.catch(error => {
-  console.log("you did something wrong");
-});
+// let showsData = axios.get(
+//   "https://unit-2-project-api-25c1595833b2.herokuapp.com/showdates?api_key=821b0af8-cb8c-4c6a-9c47-0d7da5d506ed"
+// );
+// showsData.then(response => {
+//   table(response.data);
+//   console.log(response.data);
+// });
+// showsData.catch(error => {
+//   console.log("you did something wrong");
+// });
+
+import {BandSiteApi} from "./band-site-api.js";
+const bandApi = new BandSiteApi("821b0af8-cb8c-4c6a-9c47-0d7da5d506ed");
+(async () => {
+  // Get shows
+  const shows = await bandApi.getShows();
+  table(shows);
+  console.log(shows);
+})();
+
+  

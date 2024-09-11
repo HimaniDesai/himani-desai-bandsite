@@ -1,4 +1,3 @@
-import axios from 'axios';
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
@@ -27,18 +26,9 @@ class BandSiteApi {
 
     async getComments() {
         try {
-            const response = await fetch(`${this.baseUrl}/comments?api_key=${this.apiKey}`, {
-                method: 'GET',
-                headers: {
-                    
-                }
-            });
+            const response = await axios.get(`${this.baseUrl}/comments?api_key=${this.apiKey}`);
 
-            if (!response.ok) {
-                throw new Error('Failed to fetch comments');
-            }
-
-            const comments = await response.json();
+            const comments = response.data;
 
             // Sort comments from newest to oldest
             return comments.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -51,13 +41,7 @@ class BandSiteApi {
         
         try {
             const response = await axios.get(`${this.baseUrl}/showdates?api_key=${this.apiKey}`);
-
-            if (!response.ok) {
-                throw new Error('Failed to fetch shows');
-            }
-
-            const shows = await response.json();
-            return shows;
+            return response.data;
         } catch (error) {
             console.error('Error fetching shows:', error);
         }
@@ -78,8 +62,6 @@ const bandApi = new BandSiteApi("821b0af8-cb8c-4c6a-9c47-0d7da5d506ed");
     // Get sorted comments
     const comments = await bandApi.getComments();
     console.log(comments);
-
-    // Get shows
-    const shows = await bandApi.getShows();
-    console.log(shows);
 })();
+
+export {BandSiteApi};
