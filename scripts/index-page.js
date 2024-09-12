@@ -58,7 +58,8 @@ let comments = [
       //date
       let date = document.createElement("h3");
       date.classList.add("comment__header--date");
-      date.innerText = arr[i]["date"];
+      let v = new Date(arr[i]["timestamp"])
+      date.innerText = v.getUTCMonth()+1 + "/" + v.getDate() + "/" + v.getFullYear();
       headerContainer.appendChild(date);
   
       //comment container
@@ -73,7 +74,16 @@ let comments = [
       textContainer.appendChild(comment);
     }
   }
+  // displayComments(comments);
+
+import {BandSiteApi, apiKEY} from "./band-site-api.js";
+const bandApi = new BandSiteApi(apiKEY);
+(async () => {
+  // Get shows
+  const comments = await bandApi.getComments();
   displayComments(comments);
+  console.log(comments);
+})();
   
   
   const form = document.querySelector(".comment__input-container");

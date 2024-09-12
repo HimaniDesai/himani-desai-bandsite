@@ -1,3 +1,4 @@
+const apiKEY = "fd3c0df7-6310-4cec-9694-29cf914c5af2";
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
@@ -27,9 +28,7 @@ class BandSiteApi {
     async getComments() {
         try {
             const response = await axios.get(`${this.baseUrl}/comments?api_key=${this.apiKey}`);
-
             const comments = response.data;
-
             // Sort comments from newest to oldest
             return comments.sort((a, b) => new Date(b.date) - new Date(a.date));
         } catch (error) {
@@ -59,9 +58,6 @@ const bandApi = new BandSiteApi("821b0af8-cb8c-4c6a-9c47-0d7da5d506ed");
     };
     await bandApi.postComment(comment);
 
-    // Get sorted comments
-    const comments = await bandApi.getComments();
-    console.log(comments);
 })();
 
-export {BandSiteApi};
+export {BandSiteApi, apiKEY};

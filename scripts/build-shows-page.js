@@ -94,7 +94,7 @@ function table(arr) {
     const weekday = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
     const month = ["Jan","Feb", "Mar","Apr", "May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"]
     let v = new Date(arr[i]["date"])
-    date.innerText = weekday[v.getUTCDay()]+" " + v.getDate() + " " + month[v.getUTCMonth()]+ " " + v.getFullYear();
+    date.innerText = weekday[v.getUTCDay()]+" " + v.getDate() + " " + month[v.getMonth()]+ " " + v.getFullYear();
 
     //venues
     let venueLabel = document.createElement("h3");
@@ -142,8 +142,8 @@ function table(arr) {
 //   console.log("you did something wrong");
 // });
 
-import {BandSiteApi} from "./band-site-api.js";
-const bandApi = new BandSiteApi("821b0af8-cb8c-4c6a-9c47-0d7da5d506ed");
+import {BandSiteApi, apiKEY} from "./band-site-api.js";
+const bandApi = new BandSiteApi(apiKEY);
 (async () => {
   // Get shows
   const shows = await bandApi.getShows();
