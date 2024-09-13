@@ -714,6 +714,7 @@ body{
     
           &__delete-button {
             @include subheader-desktop;
+            border: 1px solid $mercury;
             background-color: $bandsite-black;
             height: 3rem;
             width: 10rem;
