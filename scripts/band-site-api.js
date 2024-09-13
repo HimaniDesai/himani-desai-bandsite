@@ -1,11 +1,13 @@
 //getting this apikey to start a session to fetch and update the data
-const apiKEY= getApiKey();
-function getApiKey() {(async() =>{
-    let response = await axios.get("https://unit-2-project-api-25c1595833b2.herokuapp.com/register");
-    console.log(response.data);
-    return response.data[0]["api_key"];
-})();
-}
+// const apiKEY= getApiKey();
+// function getApiKey() {(async() =>{
+//     let response = await axios.get("https://unit-2-project-api-25c1595833b2.herokuapp.com/register");
+//     console.log(response.data);
+//     return response.data[0]["api_key"];
+// })();
+// }
+//hardcoding the apiKey to restore session even after server goes down
+const apiKEY= "c0537cd5-c78e-4b0d-a492-464f8ea77a40";
 
 class BandSiteApi {
     constructor(apiKey) {
