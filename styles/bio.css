@@ -205,7 +205,6 @@ body {
 .comment__name-container {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid #E1E1E1;
 }
 .comment__input-container {
   display: flex;
@@ -261,6 +260,9 @@ body {
 .comment__button:hover {
   background-color: #000000;
 }
+.comment__default {
+  border-bottom: 1px solid #E1E1E1;
+}
 .comment__header {
   display: flex;
   justify-content: space-between;
@@ -309,20 +311,24 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 1.5rem;
+  border-bottom: 1px solid #E1E1E1;
 }
 .comment__delete-button {
   font-family: avenir-next-demi;
   font-size: 14px;
   line-height: 22px;
-  color: #323232;
-  width: 4.5rem;
-  height: 1.75rem;
+  background-color: #323232;
   border: 1px solid #E1E1E1;
-  background-color: #FFFFFF;
+  height: 1.75rem;
+  border-radius: 0.25rem;
+  color: #FFFFFF;
+  text-align: center;
+  width: 4.5rem;
+  outline-width: 0;
+  padding: 0;
 }
 .comment__delete-button:hover {
-  color: #FFFFFF;
-  background-color: #323232;
+  background-color: #000000;
 }
 
 .footer {
@@ -642,10 +648,6 @@ body {
     display: flex;
     justify-content: center;
   }
-  .comment__border {
-    width: 33rem;
-    border: 1px solid #E1E1E1;
-  }
   .comment__input-container {
     display: flex;
     flex-direction: column;
@@ -747,7 +749,6 @@ body {
   .comment__text-container-default {
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid #E1E1E1;
   }
   .comment__text-container-default--comment {
     font-family: avenir-next-regular;
@@ -757,6 +758,20 @@ body {
     width: 29rem;
     margin: 0;
     padding: 1rem 0 1.5rem 0;
+  }
+  .comment__delete-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  .comment__delete-button {
+    font-family: avenir-next-demi;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #323232;
+    height: 3rem;
+    width: 10rem;
   }
   .footer {
     background-color: #323232;

@@ -179,7 +179,7 @@ body{
     &__name-container {
       display: flex;
       justify-content: space-evenly;
-      border-bottom: 1px solid $mercury;
+    //   border-bottom: 1px solid $mercury;
     }
   
     &__input-container {
@@ -233,9 +233,9 @@ body{
       }
     }
   
-    // &__default {
-    //   border-bottom: 1px solid $mercury;
-    // }
+    &__default {
+      border-bottom: 1px solid $mercury;
+    }
     &__header {
       display: flex;
       justify-content: space-between;
@@ -280,21 +280,24 @@ body{
         display: flex;
         justify-content: flex-end;
         padding-bottom: 1.5rem;
-        // border-bottom: 1px solid $mercury;
+        border-bottom: 1px solid $mercury;
       }
 
       &__delete-button {
         @include subheader-mobile;
-        color: $bandsite-black;
-        width: 4.5rem;
-        height: 1.75rem;
+        background-color: $bandsite-black;
         border: 1px solid $mercury;
-        background-color: $white;
+        height: 1.75rem;
+        border-radius: 0.25rem;
+        color: $white;
+        text-align: center;
+        width: 4.5rem;
+        outline-width: 0;
+        padding: 0;
         &:hover {
-          color: $white;
-          background-color: $bandsite-black;
+            background-color: $bandsite-darkblack;
         }
-      }
+    }
   }
 
 .footer {
@@ -589,10 +592,10 @@ body{
           justify-content: center;
         }
     
-        &__border {
-          width: 33rem;
-          border: 1px solid $mercury;
-        }
+        // &__border {
+        //   width: 33rem;
+        //   border: 1px solid $mercury;
+        // }
     
         &__input-container {
           display: flex;
@@ -692,7 +695,7 @@ body{
         &__text-container-default {
           display: flex;
           justify-content: flex-end;
-          border-bottom: 1px solid $mercury;
+        //   border-bottom: 1px solid $mercury;
           &--comment {
             @include body-copy-desktop;
             color: $bandsite-black;
@@ -700,6 +703,20 @@ body{
             margin: 0;
             padding: 1rem 0 1.5rem 0;
           }
+        }
+
+        &__delete-button-container {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid $mercury;
+          }
+    
+          &__delete-button {
+            @include subheader-desktop;
+            background-color: $bandsite-black;
+            height: 3rem;
+            width: 10rem;
         }
       }
 
