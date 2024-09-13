@@ -233,9 +233,9 @@ body{
       }
     }
   
-    &__default {
-      border-bottom: 1px solid $mercury;
-    }
+    // &__default {
+    //   border-bottom: 1px solid $mercury;
+    // }
     &__header {
       display: flex;
       justify-content: space-between;
@@ -275,6 +275,26 @@ body{
         padding: 1rem 0 1.5rem 1rem;
       }
     }
+
+    &__delete-button-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1.5rem;
+        // border-bottom: 1px solid $mercury;
+      }
+
+      &__delete-button {
+        @include subheader-mobile;
+        color: $bandsite-black;
+        width: 4.5rem;
+        height: 1.75rem;
+        border: 1px solid $mercury;
+        background-color: $white;
+        &:hover {
+          color: $white;
+          background-color: $bandsite-black;
+        }
+      }
   }
 
 .footer {

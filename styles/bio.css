@@ -261,9 +261,6 @@ body {
 .comment__button:hover {
   background-color: #000000;
 }
-.comment__default {
-  border-bottom: 1px solid #E1E1E1;
-}
 .comment__header {
   display: flex;
   justify-content: space-between;
@@ -307,6 +304,25 @@ body {
   color: #323232;
   margin: 0;
   padding: 1rem 0 1.5rem 1rem;
+}
+.comment__delete-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+.comment__delete-button {
+  font-family: avenir-next-demi;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323232;
+  width: 4.5rem;
+  height: 1.75rem;
+  border: 1px solid #E1E1E1;
+  background-color: #FFFFFF;
+}
+.comment__delete-button:hover {
+  color: #FFFFFF;
+  background-color: #323232;
 }
 
 .footer {

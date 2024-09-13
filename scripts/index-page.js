@@ -2,6 +2,7 @@
   function displayComments(arr) {
     //Used DOM  API
     let commentContainer = document.querySelector(".comment__default-comment");
+    commentContainer.innerHTML="";
   
     for (let i = 0; i < arr.length; i++) {
       //div that holds all of my default comment content
@@ -50,19 +51,39 @@
       comment.classList.add("comment__text-container-default--comment");
       comment.innerText = arr[i]["comment"];
       textContainer.appendChild(comment);
+
+      //delete button container
+      let deleteButtonContainer = document.createElement("div");
+      deleteButtonContainer.classList.add("comment__delete-button-container");
+      defaultContainer.appendChild(deleteButtonContainer);
+
+
+      //delete
+      let deleteButton = document.createElement("button");
+      deleteButton.classList.add("comment__delete-button");
+      deleteButton.addEventListener("click", event => {
+        let varId = event.target.id;
+        deleteComment(varId);
+      });
+      deleteButton.id = arr[i]["id"];
+      deleteButton.innerText = "Remove";
+      deleteButtonContainer.appendChild(deleteButton);
     }
   }
   // displayComments(comments);
 
-  import {BandSiteApi, apiKEY} from "./band-site-api.js";
+  import {BandSiteApi,apiKEY} from "./band-site-api.js";
   const bandApi = new BandSiteApi(apiKEY);
   let comments=[];
-  (async () => {
+  function getCommentsListed () {(async () => {
     // Get shows
     comments = await bandApi.getComments();
     displayComments(comments);
     console.log(comments);
   })();
+  }
+
+  getCommentsListed();
 
   
   const form = document.querySelector(".comment__input-container");
@@ -70,7 +91,7 @@
   //attach an event listener on the form of type submit
   form.addEventListener("submit", submitEvent => {
     
-    // submitEvent.preventDefault();
+    submitEvent.preventDefault();
   
     const newComment = {};
     newComment.name = submitEvent.target.name.value;
@@ -78,11 +99,24 @@
 
     (async () => {
       // Post a comment
-      let postData = await bandApi.postComment(newComment);
+      await bandApi.postComment(newComment).then(() => {
+        //Get Comments
+        getCommentsListed();
+      });
     })();
     // clears input from entry fields
     let clearInput = document.querySelector(".comment__input-container");
     clearInput.reset();
   });
+
+  function deleteComment(id) {
+    (async () => {
+      // Delete a comment
+      await bandApi.deleteComment(id).then(()=>{
+        //Get Comments
+        getCommentsListed();
+      });
+    })();
+  }
   
 
