@@ -1,4 +1,5 @@
-const apiKEY = "b8c4dd84-5aa0-4aac-ba06-c25ccf387dc5";
+//getting this apikey to start a session to fetch and update the data
+const apiKEY = "e9967f4f-f412-41e5-a543-8416120d2e4c";
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
