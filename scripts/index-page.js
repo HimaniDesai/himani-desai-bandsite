@@ -79,11 +79,9 @@
         deleteComment(varId);
       });
       deleteButton.id = arr[i]["id"];
-      // deleteButton.innerText = "Remove";
       deleteButtonContainer.appendChild(deleteButton);
     }
   }
-  // displayComments(comments);
 
   import {BandSiteApi,apiKEY} from "./band-site-api.js";
   const bandApi = new BandSiteApi(apiKEY);

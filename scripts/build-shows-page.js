@@ -1,37 +1,3 @@
-//table data//
-// var shows = [
-//   {
-//     date: "Mon Sept 09 2024",
-//     venue: "Ronald Lane",
-//     location: "San Francisco, CA"
-//   },
-//   {
-//     date: "Tue Sept 17 2024",
-//     venue: "Pier 3 East",
-//     location: "San Francisco, CA"
-//   },
-//   {
-//     date: "Sat Oct 12 2024",
-//     venue: "View Lounge",
-//     location: "San Francisco, CA"
-//   },
-//   {
-//     date: "Sat Nov 16 2024",
-//     venue: "Hyatt Agency",
-//     location: "San Francisco, CA"
-//   },
-//   {
-//     date: "Fri Nov 29 2024",
-//     venue: "Moscow Center",
-//     location: "San Francisco, CA"
-//   },
-//   {
-//     date: "Wed Dec 18 2024",
-//     venue: "Pres Club",
-//     location: "San Francisco, CA"
-//   }
-// ];
-
 function table(arr) {
   //container that has everything
   let tableContainer = document.querySelector(".shows__container");
@@ -130,17 +96,6 @@ function table(arr) {
     button.innerText = "BUY  TICKETS";//add appropriate link whenever required to proceed in ticket booking
   }
 }
-// table(shows);
-// let showsData = axios.get(
-//   "https://unit-2-project-api-25c1595833b2.herokuapp.com/showdates?api_key=821b0af8-cb8c-4c6a-9c47-0d7da5d506ed"
-// );
-// showsData.then(response => {
-//   table(response.data);
-//   console.log(response.data);
-// });
-// showsData.catch(error => {
-//   console.log("you did something wrong");
-// });
 
 import {BandSiteApi, apiKEY} from "./band-site-api.js";
 const bandApi = new BandSiteApi(apiKEY);
