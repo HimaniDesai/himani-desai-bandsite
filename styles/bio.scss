@@ -179,7 +179,7 @@ body{
     &__name-container {
       display: flex;
       justify-content: space-evenly;
-      border-bottom: 1px solid $mercury;
+    //   border-bottom: 1px solid $mercury;
     }
   
     &__input-container {
@@ -275,6 +275,44 @@ body{
         padding: 1rem 0 1.5rem 1rem;
       }
     }
+
+    &__delete-button-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $mercury;
+      }
+      &__like-icon {
+        background-image: url("/assets/icons/SVG/icon-like.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+        background-color: $white;
+        
+        border: none;
+        &:hover {
+            background-color: $mercury;
+        }
+      }
+      &__like-label {
+        @include subheader-mobile;
+        padding: 0.5em;
+        margin-right: 2rem;
+      }
+
+      &__delete-icon {
+        background-image: url("/assets/icons/SVG/icon-delete.svg");
+        background-size: cover;
+        height: 2rem;
+        width: 1.5rem;
+        border: none;
+        background-color: $white;
+        &:hover {
+            background-color: $mercury;
+        }
+        }
   }
 
 .footer {
@@ -569,10 +607,10 @@ body{
           justify-content: center;
         }
     
-        &__border {
-          width: 33rem;
-          border: 1px solid $mercury;
-        }
+        // &__border {
+        //   width: 33rem;
+        //   border: 1px solid $mercury;
+        // }
     
         &__input-container {
           display: flex;
@@ -672,7 +710,6 @@ body{
         &__text-container-default {
           display: flex;
           justify-content: flex-end;
-          border-bottom: 1px solid $mercury;
           &--comment {
             @include body-copy-desktop;
             color: $bandsite-black;
@@ -680,6 +717,9 @@ body{
             margin: 0;
             padding: 1rem 0 1.5rem 0;
           }
+        }
+        &__like-label {
+            @include subheader-desktop;
         }
       }
 
