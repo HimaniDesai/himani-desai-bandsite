@@ -1,5 +1,9 @@
 //getting this apikey to start a session to fetch and update the data
-const apiKEY = "e9967f4f-f412-41e5-a543-8416120d2e4c";
+const apiKEY=async() =>{
+    let response = await axios.get("https://unit-2-project-api-25c1595833b2.herokuapp.com/register");
+    console.log(response.data);
+    return response.data[0]["api_key"];
+}
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
