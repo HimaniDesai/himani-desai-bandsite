@@ -52,21 +52,34 @@
       comment.innerText = arr[i]["comment"];
       textContainer.appendChild(comment);
 
-      //delete button container
+      //like- delete button container
       let deleteButtonContainer = document.createElement("div");
       deleteButtonContainer.classList.add("comment__delete-button-container");
       defaultContainer.appendChild(deleteButtonContainer);
-
+      //like
+      let likeButton = document.createElement("button");
+      likeButton.classList.add("comment__like-icon");
+      likeButton.addEventListener("click", event => {
+        let varId = event.target.id;
+        likeComment(varId);
+      });
+      likeButton.id = arr[i]["id"];
+      deleteButtonContainer.appendChild(likeButton);
+      //like-label
+      let likeLabel = document.createElement("div");
+      likeLabel.classList.add("comment__like-label");
+      likeLabel.innerText = arr[i]["likes"];
+      deleteButtonContainer.appendChild(likeLabel);
 
       //delete
       let deleteButton = document.createElement("button");
-      deleteButton.classList.add("comment__delete-button");
+      deleteButton.classList.add("comment__delete-icon");
       deleteButton.addEventListener("click", event => {
         let varId = event.target.id;
         deleteComment(varId);
       });
       deleteButton.id = arr[i]["id"];
-      deleteButton.innerText = "Remove";
+      // deleteButton.innerText = "Remove";
       deleteButtonContainer.appendChild(deleteButton);
     }
   }
@@ -113,6 +126,16 @@
     (async () => {
       // Delete a comment
       await bandApi.deleteComment(id).then(()=>{
+        //Get Comments
+        getCommentsListed();
+      });
+    })();
+  }
+
+  function likeComment(id) {
+    (async () => {
+      // Delete a comment
+      await bandApi.likeComment(id).then(()=>{
         //Get Comments
         getCommentsListed();
       });

@@ -19,6 +19,16 @@ class BandSiteApi {
         }
     }
 
+    async likeComment(id) {
+        try {
+            const response = await axios.put(`${this.baseUrl}/comments/${id}/like?api_key=${this.apiKey}`);
+            const data = response.data;
+            return data;  // Return response from API after posting
+        } catch (error) {
+            console.error('Error liking comment:', error);
+        }
+    }
+
     async getComments() {
         try {
             const response = await axios.get(`${this.baseUrl}/comments?api_key=${this.apiKey}`);

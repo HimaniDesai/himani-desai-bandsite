@@ -310,25 +310,38 @@ body {
 .comment__delete-button-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #E1E1E1;
 }
-.comment__delete-button {
+.comment__like-icon {
+  background-image: url("/assets/icons/SVG/icon-like.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  background-color: #FFFFFF;
+  border: none;
+}
+.comment__like-icon:hover {
+  background-color: #E1E1E1;
+}
+.comment__like-label {
   font-family: avenir-next-demi;
   font-size: 14px;
   line-height: 22px;
-  background-color: #323232;
-  border: 1px solid #E1E1E1;
-  height: 1.75rem;
-  border-radius: 0.25rem;
-  color: #FFFFFF;
-  text-align: center;
-  width: 4.5rem;
-  outline-width: 0;
-  padding: 0;
+  padding: 0.5em;
+  margin-right: 2rem;
 }
-.comment__delete-button:hover {
-  background-color: #000000;
+.comment__delete-icon {
+  background-image: url("/assets/icons/SVG/icon-delete.svg");
+  background-size: cover;
+  height: 2rem;
+  width: 1.5rem;
+  border: none;
+}
+.comment__delete-icon:hover {
+  background-color: #E1E1E1;
 }
 
 .footer {
@@ -759,20 +772,10 @@ body {
     margin: 0;
     padding: 1rem 0 1.5rem 0;
   }
-  .comment__delete-button-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #E1E1E1;
-  }
-  .comment__delete-button {
+  .comment__like-label {
     font-family: avenir-next-demi;
     font-size: 24px;
     line-height: 32px;
-    border: 1px solid #E1E1E1;
-    background-color: #323232;
-    height: 3rem;
-    width: 10rem;
   }
   .footer {
     background-color: #323232;

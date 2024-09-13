@@ -279,25 +279,39 @@ body{
     &__delete-button-container {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         padding-bottom: 1.5rem;
         border-bottom: 1px solid $mercury;
       }
-
-      &__delete-button {
-        @include subheader-mobile;
-        background-color: $bandsite-black;
-        border: 1px solid $mercury;
-        height: 1.75rem;
-        border-radius: 0.25rem;
-        color: $white;
-        text-align: center;
-        width: 4.5rem;
-        outline-width: 0;
-        padding: 0;
+      &__like-icon {
+        background-image: url("/assets/icons/SVG/icon-like.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+        background-color: $white;
+        
+        border: none;
         &:hover {
-            background-color: $bandsite-darkblack;
+            background-color: $mercury;
         }
-    }
+      }
+      &__like-label {
+        @include subheader-mobile;
+        padding: 0.5em;
+        margin-right: 2rem;
+      }
+
+      &__delete-icon {
+        background-image: url("/assets/icons/SVG/icon-delete.svg");
+        background-size: cover;
+        height: 2rem;
+        width: 1.5rem;
+        border: none;
+        &:hover {
+            background-color: $mercury;
+        }
+        }
   }
 
 .footer {
@@ -695,7 +709,6 @@ body{
         &__text-container-default {
           display: flex;
           justify-content: flex-end;
-        //   border-bottom: 1px solid $mercury;
           &--comment {
             @include body-copy-desktop;
             color: $bandsite-black;
@@ -704,20 +717,8 @@ body{
             padding: 1rem 0 1.5rem 0;
           }
         }
-
-        &__delete-button-container {
-            display: flex;
-            justify-content: flex-end;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid $mercury;
-          }
-    
-          &__delete-button {
+        &__like-label {
             @include subheader-desktop;
-            border: 1px solid $mercury;
-            background-color: $bandsite-black;
-            height: 3rem;
-            width: 10rem;
         }
       }
 
