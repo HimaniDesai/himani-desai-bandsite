@@ -1,8 +1,10 @@
-Creating a responsive Landing Page for a bandsite.
-Using SCSS for specifying the styling for mobile, tablet and desktop views.
-Try viewing the webpage in devtools to view the responsiveness of the webpage against various devices.
-Added new page Shows.js for bandsite shows bookings.
-Using API calls for fetching and storing the website data.
+Creating a responsive Landing Page for a bandsite.\
+Using SCSS for specifying the styling for mobile, tablet and desktop views.\
+Try viewing the webpage in devtools to view the responsiveness of the webpage against various devices.\
+Added new page Shows.js for bandsite shows bookings.\
+Using API calls for fetching and storing the website data.\
+Refer the given [API Documentation](https://unit-2-project-api-25c1595833b2.herokuapp.com/) to understand the response and request structures of the API calls.\
+All the images and icons are provided in assets folder.
 
 Mobile Layout for both the pages
 
