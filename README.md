@@ -3,6 +3,7 @@ Using SCSS for specifying the styling for mobile, tablet and desktop views.\
 Try viewing the webpage in devtools to view the responsiveness of the webpage against various devices.\
 Added new page Shows.js for bandsite shows bookings.\
 Using API calls for fetching and storing the website data.\
+Making asynchronous API calls using axios to call the API.\
 Refer the given [API Documentation](https://unit-2-project-api-25c1595833b2.herokuapp.com/) to understand the response and request structures of the API calls.\
 All the images and icons are provided in assets folder.
 
