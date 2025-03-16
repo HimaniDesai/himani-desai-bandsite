@@ -65,7 +65,7 @@ body{
 .hero {
     width: 100vw;
     height: 11.4375rem;
-    background-image: url("./assets/images/hero-bio.jpg"); 
+    background-image: url("../../assets/images/hero-bio.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ body{
         border-bottom: 1px solid $mercury;
       }
       &__like-icon {
-        background-image: url("./assets/icons/SVG/icon-like.svg");
+        background-image: url("../../assets/Icons/SVG/icon-like.svg");
         background-size: contain;
         background-repeat: no-repeat;
         height: 2rem;
@@ -303,7 +303,7 @@ body{
       }
 
       &__delete-icon {
-        background-image: url("./assets/icons/SVG/icon-delete.svg");
+        background-image: url("../../assets/icons/SVG/icon-delete.svg");
         background-size: cover;
         height: 2rem;
         width: 1.5rem;
@@ -483,7 +483,7 @@ body{
     .hero {
         width: 100vw;
         height: 25rem;
-        background-image: url("./assets/images/hero-bio.jpg"); 
+        background-image: url("../../assets/images/hero-bio.jpg"); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -840,7 +840,7 @@ body{
     .hero {
         width: 100vw;
         height: 41.875rem;
-        background-image: url("./assets/images/hero-bio.jpg"); 
+        background-image: url("../../assets/images/hero-bio.jpg"); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
